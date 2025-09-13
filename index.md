@@ -46,15 +46,15 @@ You can start exploring by checking out the latest posts below:
 
 ---
 
-💡 *Tip: Bookmark this blog so you can come back easily. You can also use the navigation links above to jump straight into the section you’re interested in.*
+💡 *Tip: Bookmark this blog so you can easily return. You can also use the navigation links above to jump straight into the section you’re interested in.*
 
 ---
 
 📬 **Stay Connected**  
-If you’d like to reach out, discuss ideas, or just say hi, feel free to connect:  
-- Email: [your-email@example.com](#)  
-- Twitter: [@yourhandle](#)  
-- LinkedIn: [Your Name](#)  
+If you’d like to reach out, discuss ideas, or say hi, feel free to connect:  
+- Email: [damilolaneal@gmail.com](damilolaneal@gmail.com)  
+- Twitter: [@\_dhamilola\_](https://x.com/_dhamilola_)  
+- LinkedIn: [Damilola Olawoyin-Yussuf](https://www.linkedin.com/in/damilolaolawoyin-yussuf/)  
 
 ---
 
