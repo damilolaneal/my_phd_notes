@@ -23,7 +23,7 @@ To make it easier for you to find content, here’s a quick guide:
   Concepts, tutorials, and things I’ve figured out along the way.  
   *Example:* _Coming soon: My notes on [Topic/Concept](#)._
 
-- **[📅 PhD Journey](_posts/journey_outline.md)**  
+- **[📅 PhD Journey](posts/journey_outline.md)**  
   Reflections, challenges, and personal experiences throughout the PhD.  
   *Example:* _Coming soon: A post about starting my first year._
 
