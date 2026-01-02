@@ -1,4 +1,8 @@
-# 👋 Welcome to My PhD Journey Blog
+---
+layout: default
+title: Welcome to My PhD Journey Blog
+---
+
 
 Hi there!  
 This blog is my digital notebook — a place where I document the papers I read, the new concepts I learn, and the milestones (big and small) along my PhD journey.  
