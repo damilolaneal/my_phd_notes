@@ -7,9 +7,7 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# GitHub Pages
-
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+# The Chronicles of a Thesis: Mission Log
 
 </header>
 
@@ -18,28 +16,33 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-## Finish
+**Mission Objective:** Acquire Doctorate.
+**Current Sol:** [Year 2, Day 45]
+**Location:** The Library / The Lab / The Void
 
-_Congratulations friend, you've completed this course!_
+## 📜 Manifesto
+This repository is the digital fossil record of my evolution from a wide-eyed student to a cynical researcher. It captures the incremental progress of scientific inquiry, preserving the "Eureka!" moments alongside the "Why is this happening?" moments.
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
+## The Map (Contents)
 
-Your blog is now live and has been deployed!
+### Phase I: The Origin
+Notes on foundational theories and the initial spark of the research question.
+*(See: `https://damilolaneal.github.io/my_phd_notes/posts/wake_up_call.html`)*
 
-Here's a recap of all the tasks you've accomplished in your repository:
+### Phase II: The Valley of Despair
+Detailed logs of data collection, debugging, and the rigorous testing of patience.
+*(See: `https://damilolaneal.github.io/my_phd_notes/posts/2026-01-02-reformulation.html` and `/failed_attempts`)*
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+### Phase III: The Synthesis
+Structuring the chaos into a coherent narrative.
+*(See: `/upcoming`)*
 
-### What's next?
+## Observation Highlights
+> **Note to self:** If the data looks too good to be true, you probably messed up the input variables.
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+## Contribution
+If you are my supervisor: **"Everything is under control."**
+If you are a fellow student: **"I have no idea what I'm doing."**
 
 <footer>
 
@@ -50,8 +53,6 @@ Here's a recap of all the tasks you've accomplished in your repository:
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2026 [Damilola Olawoyin-Yussuf]. All rights reserved. No neurons were harmed in the making of this repo (that is a lie). &bull; [Project Page](https://example.com)
 
 </footer>
