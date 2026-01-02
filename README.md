@@ -17,21 +17,21 @@
 -->
 
 **Mission Objective:** Acquire Doctorate.
-**Current Sol:** [Year 2, Day 45]
+**Current Sol:** [Year 3, Day 2]
 **Location:** The Library / The Lab / The Void
 
-## 📜 Manifesto
+## Manifesto
 This repository is the digital fossil record of my evolution from a wide-eyed student to a cynical researcher. It captures the incremental progress of scientific inquiry, preserving the "Eureka!" moments alongside the "Why is this happening?" moments.
 
 ## The Map (Contents)
 
 ### Phase I: The Origin
 Notes on foundational theories and the initial spark of the research question.
-*(See: `https://damilolaneal.github.io/my_phd_notes/posts/wake_up_call.html`)*
+*(See: [`year_1 to year_2`](https://damilolaneal.github.io/my_phd_notes/posts/wake_up_call.html))*
 
 ### Phase II: The Valley of Despair
 Detailed logs of data collection, debugging, and the rigorous testing of patience.
-*(See: `https://damilolaneal.github.io/my_phd_notes/posts/2026-01-02-reformulation.html` and `/failed_attempts`)*
+*(See: [`/experiments`](https://damilolaneal.github.io/my_phd_notes) and [`/failed_attempts`](https://damilolaneal.github.io/my_phd_notes))*
 
 ### Phase III: The Synthesis
 Structuring the chaos into a coherent narrative.
