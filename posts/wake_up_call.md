@@ -27,3 +27,7 @@ This is the wake up call though, this is the email I received after passing my c
 > Mudassir
 
 In case you're wondering about the report itself, you can find it [here](https://drive.google.com/file/d/1fbP-f-ibEgc44TW4HK7d1AFTPaBPKf7Q/view?usp=sharing).
+
+Just like the revenge arc of an anime character, [here's](../posts/2026-01-02-reformulation.md) my path to redemption. A little tip, we would be leveraging artificial intelligence. We have it, why not allow it do the menial tasks. My aim is to prove my advisor wrong on that note.
+
+It is possible though that he might not be totally wrong about the defective formulation in the methodology section of the report. However, it is prepostrous that he thinks a large portion of the document is obtained directly from generative AI.

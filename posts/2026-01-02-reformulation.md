@@ -1,4 +1,9 @@
-Aim for *Transactions on Robotics* (T-RO) and *RSS*, not second-tier conferences.
+---
+title: "Possible Direction Moving Forward"
+date: 2026-01-02
+---
+
+My aim is to get published in *Transactions on Robotics* (T-RO) and *RSS*, not second-tier conferences.
 
 Let’s dissect your proposal.
 
