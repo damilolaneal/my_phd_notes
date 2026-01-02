@@ -45,9 +45,11 @@ To make it easier for you to find content, here’s a quick guide:
 This is the wake up call though, this is the email I received after passing my comprehensive examination and working like crazy to complete my proposal draft.
 
 > From: Mudassir Masood Ali
-​
+>                                          
 > To: DAMILOLA OLAWOYIN-YUSSUF​
+>                    
 > Assalam u alaikum
+>                                                                         
 > Dear Damilola
 
 > I am writing to inform you that you were not able to satisfactorily complete your PhD thesis proposal and thus defend this semester. As discussed earlier in my office, the proposal document  you submitted was incomplete and did not meet the expected academic and technical standards for EE711. In particular, the work lacked sufficient technical rigor, convincing initial results,  and a clear original methodology. Additionally, the extensive use of AI-generated text beyond getting help for improving your self-written sentences is completely unacceptable.
