@@ -1,3 +1,8 @@
+---
+layout: default
+title: ""
+---
+
 This is the wake up call though, this is the email I received after passing my comprehensive examination and working like crazy to complete my proposal draft.
 
 > From: Mudassir Masood Ali
