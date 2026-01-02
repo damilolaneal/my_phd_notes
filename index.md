@@ -63,6 +63,8 @@ This is the wake up call though, this is the email I received after passing my c
 > Regards
 > Mudassir
 
+In case you're wondering about the report itself, you can find it [here](https://drive.google.com/file/d/1fbP-f-ibEgc44TW4HK7d1AFTPaBPKf7Q/view?usp=sharing).
+
 I’m excited to share this journey with you!  
 You can start exploring by checking out the latest posts below:
 
