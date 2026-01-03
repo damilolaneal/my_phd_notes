@@ -5,8 +5,6 @@ date: 2026-01-02
 
 My aim is to get published in *Transactions on Robotics* (T-RO) and *RSS*, not second-tier conferences.
 
-Let’s dissect your proposal.
-
 ---
 
 ### Part 1: The "Kill or Cure" Critique (ADCP-Assisted SLAM)
@@ -14,7 +12,7 @@ Let’s dissect your proposal.
 **The Hypothesis:** Utilizing water column velocity profiles (from ADCP) as a static map for localization constraints.
 
 #### Theoretical Footing: Hydrodynamics & Stability
-You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a map $M(\mathbf{x})$. For this to work as a loop-closure constraint, the condition $\vec{u}(\mathbf{x}, t_1) \approx \vec{u}(\mathbf{x}, t_2)$ must hold.
+You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a map $M(\mathbf{x})$. For this to work as a loop-closure constraint, the condition $$\vec{u}(\mathbf{x}, t_1) \approx \vec{u}(\mathbf{x}, t_2)$$ must hold.
 
 *   **Fluid Dynamics Reality:** In most operational environments (littoral, shelf, or deep ocean), flow is rarely laminar and time-invariant. You are dealing with turbulent flows, tidal harmonics, and internal waves.
 *   **The Reynolds Number Problem:** At the scale of an AUV, the Reynolds number is high. If you pass through a wake or an eddy, that feature is transient. It exists at $t_1$ and is gone or displaced by $t_2$.
