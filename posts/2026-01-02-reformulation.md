@@ -12,7 +12,11 @@ My aim is to get published in *Transactions on Robotics* (T-RO) and *RSS*, not s
 **The Hypothesis:** Utilizing water column velocity profiles (from ADCP) as a static map for localization constraints.
 
 #### Theoretical Footing: Hydrodynamics & Stability
-You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a map $M(\mathbf{x})$. For this to work as a loop-closure constraint, the condition $$\vec{u}(\mathbf{x}, t_1) \approx \vec{u}(\mathbf{x}, t_2)$$ must hold.
+You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a map $M(\mathbf{x})$. For this to work as a loop-closure constraint, the condition 
+
+$$\vec{u}(\mathbf{x}, t_1) \approx \vec{u}(\mathbf{x}, t_2)$$ 
+
+must hold.
 
 *   **Fluid Dynamics Reality:** In most operational environments (littoral, shelf, or deep ocean), flow is rarely laminar and time-invariant. You are dealing with turbulent flows, tidal harmonics, and internal waves.
 *   **The Reynolds Number Problem:** At the scale of an AUV, the Reynolds number is high. If you pass through a wake or an eddy, that feature is transient. It exists at $t_1$ and is gone or displaced by $t_2$.
@@ -20,7 +24,7 @@ You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a ma
 
 #### The "Skeptic's Argument" (Why this fails)
 1.  **The Reference Frame Circularity (The Fatal Flaw):**
-    To map the water velocity $\vec{u}_{water}$, you measure the relative velocity $\vec{v}_{rel}$ (ADCP raw data).
+    To map the water velocity $\vec{u}\_{water}$, you measure the relative velocity $\vec{v}\_{rel}$ (ADCP raw data).
     $$ \vec{u}_{water} = \vec{v}_{rel} + \vec{v}_{robot} $$
     To get $\vec{u}_{water}$, you need an accurate estimate of $\vec{v}_{robot}$. But your goal is to *find* $\vec{v}_{robot}$ (localization) using $\vec{u}_{water}$.
     Unless you have a DVL lock on the bottom (Bottom Track), you are solving for two unknowns with one equation. If you *do* have Bottom Track, the DVL gives you superior constraints, rendering the water column data redundant and noisy.
