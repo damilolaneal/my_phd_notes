@@ -14,19 +14,19 @@ My aim is to get published in *Transactions on Robotics* (T-RO) and *RSS*, not s
 #### Theoretical Footing: Hydrodynamics & Stability
 You are proposing to treat the ocean flow field $\vec{u}(\mathbf{x}, t)$ as a map $M(\mathbf{x})$. For this to work as a loop-closure constraint, the condition 
 
-$$\vec{u}(\mathbf{x}, t_1) \approx \vec{u}(\mathbf{x}, t_2)$$ 
+$$\vec{u}(\mathbf{x}, t\_1) \approx \vec{u}(\mathbf{x}, t\_2)$$ 
 
 must hold.
 
 *   **Fluid Dynamics Reality:** In most operational environments (littoral, shelf, or deep ocean), flow is rarely laminar and time-invariant. You are dealing with turbulent flows, tidal harmonics, and internal waves.
-*   **The Reynolds Number Problem:** At the scale of an AUV, the Reynolds number is high. If you pass through a wake or an eddy, that feature is transient. It exists at $t_1$ and is gone or displaced by $t_2$.
+*   **The Reynolds Number Problem:** At the scale of an AUV, the Reynolds number is high. If you pass through a wake or an eddy, that feature is transient. It exists at $t\_1$ and is gone or displaced by $t\_2$.
 *   **Correlation:** A flow profile is often spatially low-frequency (it changes slowly over kilometers) but temporally high-frequency (turbulence). This is the **worst combination for SLAM**. SLAM needs spatially distinct, high-gradient features (sharp corners, distinct textures) that remain static. A 0.5 m/s current flowing North looks identical to a 0.5 m/s current flowing North 100 meters away. **Result:** Massive aliasing and perceptual ambiguity.
 
 #### The "Skeptic's Argument" (Why this fails)
 1.  **The Reference Frame Circularity (The Fatal Flaw):**
     To map the water velocity $\vec{u}\_{water}$, you measure the relative velocity $\vec{v}\_{rel}$ (ADCP raw data).
-    $$ \vec{u}_{water} = \vec{v}_{rel} + \vec{v}_{robot} $$
-    To get $\vec{u}_{water}$, you need an accurate estimate of $\vec{v}_{robot}$. But your goal is to *find* $\vec{v}_{robot}$ (localization) using $\vec{u}_{water}$.
+    $$ \vec{u}\_{water} = \vec{v}\_{rel} + \vec{v}\_{robot} $$
+    To get $\vec{u}\_{water}$, you need an accurate estimate of $\vec{v}\_{robot}$. But your goal is to *find* $\vec{v}\_{robot}$ (localization) using $\vec{u}\_{water}$.
     Unless you have a DVL lock on the bottom (Bottom Track), you are solving for two unknowns with one equation. If you *do* have Bottom Track, the DVL gives you superior constraints, rendering the water column data redundant and noisy.
 
 2.  **Non-Stationarity:**
@@ -40,8 +40,8 @@ Do not make "Current-Assisted SLAM" your primary thesis contribution. It is a we
 **The Fix (If you keep it):**
 Do not use it for Loop Closure. Use it for **Gaussian Process (GP) Flow Mapping** to aid the process model (Dead Reckoning).
 *   **Formulation:** Model the flow field as a Vector-valued Gaussian Process with a Spatiotemporal Kernel:
-    $$ k((\mathbf{x}, t), (\mathbf{x}', t')) = k_{space}(\mathbf{x}, \mathbf{x}') \cdot k_{time}(t, t') $$
-*   **Integration:** In your Factor Graph, introduce "Flow Factors." The state vector includes robot pose $X_i$ and local flow velocity $V_{flow}$. The GP serves as a smoothness prior on $V_{flow}$.
+    $$ k((\mathbf{x}, t), (\mathbf{x}', t')) = k\_{space}(\mathbf{x}, \mathbf{x}') \cdot k\_{time}(t, t') $$
+*   **Integration:** In your Factor Graph, introduce "Flow Factors." The state vector includes robot pose $X\_i$ and local flow velocity $V\_{flow}$. The GP serves as a smoothness prior on $V\_{flow}$.
 *   **Value:** This allows you to subtract the estimated current from your dynamic model, reducing integration error during DVL dropouts. It is a *navigation aid*, not a *localization solution*.
 
 ---
@@ -56,7 +56,7 @@ If you want an ICRA/TRO paper, you need to solve the "Feature-Poor/Unstructured"
 **The Novelty:** Apply **Implicit Neural Representations (INRs)** or **Gaussian Splatting** to Forward Looking Sonar (FLS) or Multibeam data. Instead of storing a point cloud, you train a neural network to represent the continuous acoustic field.
 
 **The Formulation:**
-*   **Architecture:** An MLP $F_\theta(\mathbf{x}, \mathbf{d}) \rightarrow (\sigma, I)$, taking coordinate $\mathbf{x}$ and viewing direction $\mathbf{d}$ (incidence angle is critical in sonar), outputting density $\sigma$ and intensity $I$.
+*   **Architecture:** An MLP $F\_\theta(\mathbf{x}, \mathbf{d}) \rightarrow (\sigma, I)$, taking coordinate $\mathbf{x}$ and viewing direction $\mathbf{d}$ (incidence angle is critical in sonar), outputting density $\sigma$ and intensity $I$.
 *   **Differentiable Acoustic Rendering:** Replace the optical ray-marching integral with a sonar equation approximation. The loss function minimizes the difference between the *synthesized* sonar image and the *real* sonar image.
 *   **SLAM:** "Inverting" the NeRF. Once the field is partially learned, freeze the network and backpropagate the error to update the camera (sonar) pose.
 
@@ -84,7 +84,7 @@ If you want an ICRA/TRO paper, you need to solve the "Feature-Poor/Unstructured"
 **The Formulation:**
 *   **Metric:** Shannon Entropy or the Trace of the Posterior Covariance Matrix (D-Optimality).
 *   **Control:** Model Predictive Control (MPC).
-    $$ J = \sum_{k=0}^{N} \| \mathbf{x}_k - \mathbf{x}_{goal} \|^2_Q + \lambda \cdot \text{Trace}(\Sigma_{slam}(\mathbf{u}_k)) $$
+    $$ J = \sum\_{k=0}^{N} \| \mathbf{x}\_k - \mathbf{x}\_{goal} \|^2\_Q + \lambda \cdot \text{Trace}(\Sigma\_{slam}(\mathbf{u}\_k)) $$
 *   **Mechanism:** If the robot is over sand (high uncertainty, high covariance), the cost function drives it toward a known structure (rock, pipeline) seen previously to "reset" the drift (close the loop), then return to the goal.
 *   **Deep Learning Hook:** Use a CNN to predict "Loop Closure Probability" from the current sonar image to weight the cost function.
 
